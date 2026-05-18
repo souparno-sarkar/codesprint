@@ -1,0 +1,30 @@
+During an adventure in an ancient kingdom, Jagrit discovered a magical pathway filled with glowing energy stones. Each stone had a number written on it.
+
+However, some stones had lost their power and showed the number 0.
+The kingdom’s wizard gave Jagrit a task:
+
+“Move all the powerless stones (0s) to the end of the pathway while keeping the order of the active stones exactly the same.”
+
+Help Jagrit rearrange the stones correctly.
+
+Input Format
+The first line contains an integer N — the number of stones.
+
+The second line contains N space-separated integers representing the stones.
+
+Output Format
+Print the updated arrangement after moving all zeroes to the end.
+
+
+Example
+Input
+N = 7
+
+Elements = 1 0 4 0 5 2 0
+
+Output
+1 4 5 2 0 0 0
+
+Constraints
+1 ≤ N ≤ 10^5
+−10^9 ≤ elements ≤ 10^9
