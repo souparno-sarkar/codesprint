@@ -1,0 +1,62 @@
+Problem Statement
+Souvik is building a secure digital firewall for CodeSprint 3.0.
+To test the firewall strength, he designed a special numeric pattern.
+
+The firewall follows these rules:
+
+Numbers increase from 1 on the left side.
+
+Numbers decrease on the right side.
+
+The middle section is filled with @ symbols.
+
+As the rows increase:
+
+the number section grows
+
+the @ section shrinks
+
+Help Souvik generate the firewall pattern.
+
+Input Format
+A single integer N
+
+Output Format
+Print the required firewall pattern.
+
+Example
+Input
+N = 5
+
+Output
+1@@@@@@@@1
+
+12@@@@@@21
+
+123@@@@321
+
+1234@@4321
+
+1234554321
+
+Explanation:
+
+1. Row 1 → numbers are small, so many `@`
+
+2. With every row:
+
+* left numbers increase
+
+* right numbers mirror them
+
+* middle `@` symbols decrease
+
+Constraints
+1≤N≤20
+
+Hints (2)
+1
+Hint 1 : Every row has 3 parts — left numbers, middle `@`, right numbers.
+
+2
+Hint 2 : In each new row, the `@` symbols decrease by `2`.

@@ -1,0 +1,23 @@
+Problem Statement During the annual college fest, Shristi was given the responsibility of managing hundreds of event announcements sent by 
+different student clubs. To organize the announcements better, she decided to create a smart text analyzer for the fest committee. 
+The analyzer should: Count the total number of vowels (a, e, i, o, u) irrespective of case. Count the total number of consonants. 
+Count the total number of words in the sentence. 
+However, spaces, digits, and punctuation marks should not be counted as vowels or consonants. 
+Help Shristi analyze the announcements correctly. 
+Input Format A single line of text (may contain letters, spaces, and punctuation; max 200 chars) 
+
+Output 
+Format Line 1: Total vowels 
+Line 2: Total consonants 
+Line 3: Total words 
+
+Example Input : Welcome to KIIT Fest 2026! 
+
+Output 
+Total Vowels: 7 
+Total Consonants: 10 
+Total Words: 5 
+
+Constraints 1 ≤ Length of sentence ≤ 200 
+
+The sentence may contain uppercase letters, lowercase letters, spaces, and punctuation symbols
