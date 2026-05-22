@@ -1,0 +1,66 @@
+Problem Statement
+Harsh is helping his professor track attendance during a workshop in college.
+Students enter the seminar hall batch by batch.
+
+You are given an array where:
+arr[i] represents the number of students entering during batch i.
+
+The seminar hall becomes full once the total number of students inside becomes strictly greater than X.
+
+Your task is to find the first batch index where the hall becomes full.
+
+If the hall never becomes full, print -1.
+
+Input Format
+First line contains two integers N and X.
+
+Second line contains N space-separated integers.
+
+Output Format
+Print a single integer:
+
+
+index of the first batch where total students exceed X
+
+or -1 if it never happens.
+
+Example
+Input
+N = 6
+
+X = 20
+
+3 4 5 2 8 1
+
+Output
+4
+
+Explanation:
+
+Running total of students:
+
+Batch 0 → 3
+
+Batch 1 → 7
+
+Batch 2 → 12
+
+Batch 3 → 14
+
+Batch 4 → 22
+
+At index 4, total students become greater than 20.
+
+So the answer is: 4
+
+Constraints
+1 ≤ N ≤ 10^5
+1 ≤ X ≤ 10^9
+0 ≤ arr[i] ≤ 10^4
+
+Hints (2)
+1
+Hint 1: Think of it like a live attendance counter increasing batch by batch.
+
+2
+Hint 2: You don’t need to store totals for every batch separately. One running total is enough!

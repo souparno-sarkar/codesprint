@@ -1,0 +1,62 @@
+Problem Statement
+During exam week, Sneha is trying to find the quietest seats in the college library.
+
+The library is represented as an N × N matrix where:
+
+1 represents an occupied seat
+
+0 represents an empty seat
+
+Sneha believes students sitting next to each other will start gossiping instead of studying.
+
+So, an empty seat becomes disturbed if at least one of its neighboring seats (top, bottom, left, or right) is occupied.
+
+Help Sneha mark the library seats using:
+
+O → Occupied seat
+
+X → Disturbed seat
+
+S → Safe empty seat
+
+Input Format
+
+First line contains an integer N
+
+Next N lines contain N space-separated integers (0 or 1)
+
+Output Format
+
+
+Print the final seating matrix.
+
+Example
+Input
+N = 3
+
+1 0 0
+0 0 1
+0 0 0
+
+Output
+O X X
+X X O
+S S X
+
+Explanation:
+
+1.Occupied seats (1) are marked as O.
+
+2.Empty seats adjacent to occupied seats are marked as X.
+
+3.Remaining empty seats are marked as S.
+
+Constraints
+1 ≤ N ≤ 50
+
+Hints (2)
+1
+Hint 1: Sneha only cares about the 4 nearby seats… diagonal gossip doesn’t count
+
+2
+Hint 2: If a seat already has a student sitting there, no need to check anything else.
