@@ -1,0 +1,45 @@
+Problem Statement
+Saptak is designing secure passwords for the participants of CodeSprint 3.0.
+To keep the accounts safe, every password must follow some important security rules.
+
+A password is considered STRONG if:
+
+it contains at least one uppercase letter
+
+at least one lowercase letter
+
+and at least one digit
+
+Help Saptak determine whether the given password is strong or not.
+
+Input Format
+A single string representing the password.
+
+Output Format
+Print "STRONG" if the password satisfies all conditions.
+
+Otherwise, print "WEAK".
+
+Example
+Input
+Code123
+
+Output
+STRONG
+
+Explanation:
+
+C → uppercase letter
+
+ode → lowercase letters
+
+123 → digits
+
+Since all conditions are satisfied, the password is strong.
+
+Constraints
+1≤length of password≤100
+
+Hints (1)
+1
+Hint 1: Traverse the password character by character and check whether each character is an uppercase letter, a lowercase letter, or a digit.
